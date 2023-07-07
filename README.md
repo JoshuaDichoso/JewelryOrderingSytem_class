@@ -1,5 +1,5 @@
 # JewelryOrderingSytem_class
-#CMPE 103: Object Oriented Programming
+CMPE 103: Object Oriented Programming
 
-#Instructor: Ms. Indaleen Quinsayas
-#Dichoso, Mark Joshua
+Instructor: Ms. Indaleen Quinsayas
+Dichoso, Mark Joshua
