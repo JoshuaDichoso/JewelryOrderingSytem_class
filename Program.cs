@@ -124,12 +124,53 @@ namespace JewelryOrderingSystem
         private static void CreateDummyData()
         {
             menu.AddJewelry("Gold Chain Necklace", 1000m);
+            menu.GetCustomizationOptions("Gold Chain Necklace").Add("Locket");
+            menu.GetCustomizationOptions("Gold Chain Necklace").Add("Princess Necklace");
+            menu.GetCustomizationOptions("Gold Chain Necklace").Add("Choker");
+            menu.GetCustomizationOptions("Gold Chain Necklace").Add("Multi Chain");
+            menu.GetCustomizationOptions("Gold Chain Necklace").Add("Negligee");
+
             menu.AddJewelry("Pearl Necklace", 400m);
+            menu.GetCustomizationOptions("Pearl Necklace").Add("Locket");
+            menu.GetCustomizationOptions("Pearl Necklace").Add("Princess Necklace");
+            menu.GetCustomizationOptions("Pearl Necklace").Add("Choker");
+            menu.GetCustomizationOptions("Pearl Necklace").Add("Multi Chain");
+            menu.GetCustomizationOptions("Pearl Necklace").Add("Negligee");
+
             menu.AddJewelry("Silver Necklace", 600m);
+            menu.GetCustomizationOptions("Silver Necklace").Add("Locket");
+            menu.GetCustomizationOptions("Silver Necklace").Add("Princess Necklace");
+            menu.GetCustomizationOptions("Silver Necklace").Add("Choker");
+            menu.GetCustomizationOptions("Silver Necklace").Add("Multi Chain");
+            menu.GetCustomizationOptions("Silver Necklace").Add("Negligee");
+
             menu.AddJewelry("Iron Chain", 100m);
+            menu.GetCustomizationOptions("Iron Chain").Add("Locket");
+            menu.GetCustomizationOptions("Iron Chain").Add("Princess Necklace");
+            menu.GetCustomizationOptions("Iron Chain").Add("Choker");
+            menu.GetCustomizationOptions("Iron Chain").Add("Multi Chain");
+            menu.GetCustomizationOptions("Iron Chain").Add("Negligee");
+
             menu.AddJewelry("Diamond Necklace", 5000m);
+            menu.GetCustomizationOptions("Diamond Necklace").Add("Locket");
+            menu.GetCustomizationOptions("Diamond Necklace").Add("Princess Necklace");
+            menu.GetCustomizationOptions("Diamond Necklace").Add("Choker");
+            menu.GetCustomizationOptions("Diamond Necklace").Add("Multi Chain");
+            menu.GetCustomizationOptions("Diamond Necklace").Add("Negligee");
+
             menu.AddJewelry("Yellow Gold Necklace", 9000m);
+            menu.GetCustomizationOptions("Yellow Gold Necklace").Add("Locket");
+            menu.GetCustomizationOptions("Yellow Gold Necklace").Add("Princess Necklace");
+            menu.GetCustomizationOptions("Yellow Gold Necklace").Add("Choker");
+            menu.GetCustomizationOptions("Yellow Gold Necklace").Add("Multi Chain");
+            menu.GetCustomizationOptions("Yellow Gold Necklace").Add("Negligee");
+
             menu.AddJewelry("Quartz Necklace", 50m);
+            menu.GetCustomizationOptions("Quartz Necklace").Add("Locket");
+            menu.GetCustomizationOptions("Quartz Necklace").Add("Princess Necklace");
+            menu.GetCustomizationOptions("Quartz Necklace").Add("Choker");
+            menu.GetCustomizationOptions("Quartz Necklace").Add("Multi Chain");
+            menu.GetCustomizationOptions("Quartz Necklace").Add("Negligee");
         }
     }
 }
