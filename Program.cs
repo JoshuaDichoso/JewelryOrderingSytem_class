@@ -5,7 +5,7 @@ namespace JewelryOrderingSystem
 {
     class Program
     {
-        private static Menu menu;
+        public static Menu menu;
 
         static void Main()
         {
@@ -17,7 +17,7 @@ namespace JewelryOrderingSystem
             DisplayMenu();
         }
 
-        private static void DisplayMenu()
+        public static void DisplayMenu()
         {
             Console.WriteLine("\nAvailable Necklaces:");
             for (int i = 0; i < menu.Necklaces.Count; i++)
@@ -76,7 +76,7 @@ namespace JewelryOrderingSystem
             }
         }
 
-        private static int DisplayCustomizationOptions(List<string> options)
+        public static int DisplayCustomizationOptions(List<string> options)
         {
             Console.WriteLine("\nCustomization Options:");
             for (int i = 0; i < options.Count; i++)
@@ -93,13 +93,13 @@ namespace JewelryOrderingSystem
             return -1;
         }
 
-        private static string GetCustomerName()
+        public static string GetCustomerName()
         {
             Console.Write("Enter customer name: ");
             return Console.ReadLine();
         }
 
-        private static decimal GetPaymentAmount(decimal totalPrice)
+        public static decimal GetPaymentAmount(decimal totalPrice)
         {
             Console.Write("Enter payment amount: $");
             if (decimal.TryParse(Console.ReadLine(), out decimal paymentAmount))
@@ -110,7 +110,7 @@ namespace JewelryOrderingSystem
             return -1;
         }
 
-        private static void GenerateReceipt(string customerName, string necklaceType, decimal necklacePrice, decimal paymentAmount, decimal change)
+        public static void GenerateReceipt(string customerName, string necklaceType, decimal necklacePrice, decimal paymentAmount, decimal change)
         {
             Console.WriteLine("\n--- Receipt ---");
             Console.WriteLine($"Customer Name: {customerName}");
@@ -121,7 +121,7 @@ namespace JewelryOrderingSystem
             Console.WriteLine("Thank you for your order!");
         }
 
-        private static void CreateDummyData()
+        public static void CreateDummyData()
         {
             menu.AddJewelry("Gold Chain Necklace", 1000m);
             menu.GetCustomizationOptions("Gold Chain Necklace").Add("Locket");
