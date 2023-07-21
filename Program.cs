@@ -26,8 +26,8 @@ namespace JewelryOrderingSystem
             }
 
             Console.Write("Enter your choice: ");
-            if (int.TryParse(Console.ReadLine(), out int choice))
-            {
+            int choice = int.Parse(Console.ReadLine());
+    
                 if (choice < 1 || choice > menu.Necklaces.Count)
                 {
                     Console.WriteLine("Invalid choice!");
@@ -45,6 +45,7 @@ namespace JewelryOrderingSystem
                 if (customizationChoice < 1 || customizationChoice > customizationOptions.Count)
                 {
                     Console.WriteLine("Invalid customization choice!");
+                    
                     return;
                 }
 
@@ -63,6 +64,7 @@ namespace JewelryOrderingSystem
                 if (paymentAmount < necklacePrice)
                 {
                     Console.WriteLine("Insufficient payment!");
+                    
                     return;
                 }
 
@@ -85,29 +87,24 @@ namespace JewelryOrderingSystem
             }
 
             Console.Write("Enter your choice: ");
-            if (int.TryParse(Console.ReadLine(), out int choice))
-            {
-                return choice;
-            }
+            int choice = int.Parse(Console.ReadLine());
 
-            return -1;
+            return choice;
         }
 
         public static string GetCustomerName()
         {
             Console.Write("Enter customer name: ");
+            
             return Console.ReadLine();
         }
 
         public static decimal GetPaymentAmount(decimal totalPrice)
         {
             Console.Write("Enter payment amount: $");
-            if (decimal.TryParse(Console.ReadLine(), out decimal paymentAmount))
-            {
-                return paymentAmount;
-            }
+            decimal paymentAmount = decimal.Parse(Console.ReadLine());
 
-            return -1;
+            return paymentAmount;
         }
 
         public static void GenerateReceipt(string customerName, string necklaceType, decimal necklacePrice, decimal paymentAmount, decimal change)
